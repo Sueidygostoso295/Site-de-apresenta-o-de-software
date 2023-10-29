@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <nav>
+            <ul>
+                <li id="cart-icon"><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="text"><h1>FeiraWeb</h1></div>
+        <div class="header">
+            <div class="product">
+                <img src="/Login and Signup Form/fotos/produto 1.jpg" height="180px" width="190px" alt="Ryzen 5 4600g">
+                <h2>Ryzen 5 4600g</h2>
+                <p class="d">Processador AMD Ryzen 5 4600G 3.7GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, 100-100000147BOX.</p>
+                <p>Preço: $629.00</p>
+                <button class="add-to-cart" data-id="1" data-price="629.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="/Login and Signup Form/fotos/placa-de-video-galax-geforce-rtx-3060-1-click-oc-15-gbps-12gb-gddr6-ray-tracing-dlss-36nol7md1voc_1614253646_m.jpg "height="180px" width="190px" alt="Produto 2">
+                <h2>Placa de Vídeo RTX 3060</h2>
+                <p class="d">Click OC PCI-e Galax, 8 GB GDDR6, 128BIT - 36NSL8MD6OCC</p>
+                <p>Preço: $1.499,99</p>
+                <button class="add-to-cart" data-id="2" data-price="15.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button"><a href="html2.html">Fechar Compra</a></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
